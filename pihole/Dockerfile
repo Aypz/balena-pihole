@@ -5,6 +5,8 @@ WORKDIR /usr/src/app
 
 COPY cont-init.d/ /etc/cont-init.d/
 COPY services/ /etc/services.d/
+COPY custom.list /etc/pihole/custom.list
+
 
 ENV DEBIAN_FRONTEND noninteractive
 
